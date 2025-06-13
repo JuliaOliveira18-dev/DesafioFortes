@@ -1,0 +1,231 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f5f5;
+}
+
+
+.cabecalho-navegacao {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border);
+}
+
+.container-cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.informacoes-empresa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.titulo-empresa {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27c1e5;
+  margin: 0;
+}
+
+.botoes-topo button {
+  margin-top: 20px;
+  background-color: #27c1e5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+
+.conteudo {
+  padding: 20px;
+}
+
+.faixa {
+  background-color: white;
+  border-radius: 8px;
+  padding: 20px;
+  margin-bottom: 20px;
+}
+
+#form-acao {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-top: 15px;
+}
+
+#form-acao input,
+#form-acao select {
+  padding: 10px;
+  border-radius: 5px;
+  border: 1px solid #ccc;
+}
+
+.nova-acao {
+  background-color: #27c1e5;
+  color: white;
+  padding: 10px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.linha-acao {
+  background-color: #fff;
+  border-radius: 10px;
+  padding: 15px;
+  margin-bottom: 15px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.linha-acao h3 {
+  font-size: 18px;
+  margin-bottom: 5px;
+}
+
+.linha-acao p {
+  margin: 5px 0;
+  font-size: 14px;
+}
+
+.detalhes {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.botoes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}
+
+.botao {
+  padding: 6px 12px;
+  border-radius: 5px;
+  border: none;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.editar {
+  background-color: #dbe4ff;
+  color: #003cff;
+}
+
+.excluir {
+  background-color: #ffb3b3;
+  color: #b80000;
+}
+
+.iniciar {
+  background-color: #e6f0ff;
+  color: #0044cc;
+}
+
+.concluir {
+  background-color: #d4fcd4;
+  color: #007a00;
+}
+
+.status {
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  background-color: lightgray;
+  margin-left: 10px;
+}
+
+@media (max-width: 768px) {
+  .detalhes {
+    flex-direction: column;
+  }
+}
+
+/* Responsividade para telas médias (tablets) e pequenas (celulares) */
+@media (max-width: 1024px) {
+  .conteudo-cabecalho {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .informacoes-empresa {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .container-cabecalho {
+    padding: 0 10px;
+  }
+
+  .faixa {
+    padding: 15px;
+  }
+
+  #form-acao input,
+  #form-acao select {
+    width: 100%;
+  }
+
+  .botoes-topo button,
+  .nova-acao {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .linha-acao {
+    padding: 10px;
+  }
+
+  .botao {
+    flex: 1 1 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-empresa {
+    font-size: 18px;
+  }
+
+  .linha-acao h3 {
+    font-size: 16px;
+  }
+
+  .linha-acao p {
+    font-size: 13px;
+  }
+
+  .botao {
+    font-size: 12px;
+    padding: 8px;
+  }
+
+  .status {
+    font-size: 11px;
+  }
+}
