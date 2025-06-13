@@ -27,6 +27,18 @@
       <div class="campo-pesquisa">
         <input type="text" id="campo-busca" placeholder="Pesquise por título, descrição ou local..." />
         <button onclick="pesquisar()">Pesquisar</button>
+        <button id="abrirSelecao" class="botao-cadastrar">Filtrar Resíduo</button>
+      </div>
+            <div id="selecaoResiduos" class="caixa-selecao" style="display: none;">
+        <p>Selecione os tipos de resíduos:</p>
+        <label><input type="checkbox" name="residuos" value="Vidro"> Vidro</label><br>
+        <label><input type="checkbox" name="residuos" value="Papel"> Papel</label><br>
+        <label><input type="checkbox" name="residuos" value="Plástico"> Plástico</label><br>
+        <label><input type="checkbox" name="residuos" value="Metal"> Metal</label><br>
+        <label><input type="checkbox" name="residuos" value="Eletrônicos"> Eletrônicos</label><br>
+        <label><input type="checkbox" name="residuos" value="Outros"> Outros</label><br>
+        <hr>
+        <button id="cadastroresíduo" class="botao-cadastrar">Filtrar</button>
       </div>
     </section>
 
