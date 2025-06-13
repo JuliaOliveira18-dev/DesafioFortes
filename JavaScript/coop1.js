@@ -1,4 +1,10 @@
+const botao = document.getElementById("abrirSelecao");
+  const selecao = document.getElementById("selecaoResiduos");
 
+  botao.addEventListener("click", () => {
+    selecao.style.display = selecao.style.display === "none" ? "block" : "none";
+  }); 
+  
 let nome = "Usuário Exemplo";
 
 function mostrarSecao(secao) {

@@ -17,3 +17,7 @@ function inicio() {
   window.location.href = "../index.html";  
 }
 
+
+function Coleta() {
+  window.location.href = "coop3.html";  
+}
