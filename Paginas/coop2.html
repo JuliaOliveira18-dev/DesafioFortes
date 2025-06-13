@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Gerenciar Materiais</title>
+  <link rel="stylesheet" href="../CSS/coop2.css" />
+
+</head>
+
+<body>
+  <main class="cabecalho-navegacao">
+    <div class="container-cabecalho">
+      <div class="conteudo-cabecalho">
+        <div class="informacoes-empresa">
+          <h1 class="titulo-empresa">Gerenciar Materiais</h1>
+        </div>
+        <div class="botoes-topo">
+          <a href="coop1.html"><button class="botao-topo">Voltar</button></a>
+          <button class="botao-topo" onclick="inicio()">Sair</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <main>
+    <section class="caixas-info">
+      <div class="caixa-info">
+        <h3>Materiais Disponíveis</h3>
+        <p>2</p>
+      </div>
+      <div class="caixa-info">
+        <h3>Coletados</h3>
+        <p>0</p>
+      </div>
+      <div class="caixa-info">
+        <h3>Em Processamento</h3>
+        <p>0</p>
+      </div>
+    </section>
+
+    <section class="secao-coleta">
+      <h2 class="titulo-secao">Solicitar Nova Coleta de Material / Cadastrar Resíduo</h2>
+      <button class="botao-azul" onclick="novaSolicitacao()">Nova Solicitação</button>
+      <button id="abrirSelecao" class="botao-cadastrar">Cadastrar Resíduo</button>
+
+      <div id="selecaoResiduos" class="caixa-selecao" style="display: none;">
+        <p>Selecione os tipos de resíduos:</p>
+        <label><input type="checkbox" name="residuos" value="Vidro"> Vidro</label><br>
+        <label><input type="checkbox" name="residuos" value="Papel"> Papel</label><br>
+        <label><input type="checkbox" name="residuos" value="Plástico"> Plástico</label><br>
+        <label><input type="checkbox" name="residuos" value="Metal"> Metal</label><br>
+        <label><input type="checkbox" name="residuos" value="Eletrônicos"> Eletrônicos</label><br>
+        <label><input type="checkbox" name="residuos" value="Outros"> Outros</label><br>
+        <hr>
+        <button id="cadastroresíduo" class="botao-cadastrar">Cadastrar</button>
+      </div>
+
+    </section>
+
+    <section class="secao-materiais">
+      <h2 class="titulo-secao">Materiais Disponíveis para Coleta</h2>
+      <div class="item-material">
+        <div class="info-material">
+          <strong>Papel e Papelão</strong><br />
+          <strong>Quantidade:</strong> 50kg<br />
+          <strong>Local:</strong> Escritório Central - Rua das Flores, 123<br />
+          <span class="status-verde">Disponível</span>
+        </div>
+        <div class="area-botoes">
+          <button class="botao-coletar">Coletar</button>
+          <button class="botao-processar">Processar</button>
+        </div>
+      </div>
+    </section>
+  </main>
+  <script src="../JavaScript/coop2.js"></script>
+</body>
+
+</html>

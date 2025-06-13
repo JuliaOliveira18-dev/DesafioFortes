@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Portal das Cooperativas</title>
+
+  <link rel="stylesheet" href="../CSS/coop1.css" />
+</head>
+
+<body>
+  <main class="cabecalho-navegacao">
+    <div class="container-cabecalho">
+      <div class="conteudo-cabecalho">
+        <div class="informacoes-empresa">
+          <h1 class="titulo-empresa">Portal das Cooperativas</h1>
+        </div>
+        <button class="botao-voltar" onclick="sair()">Sair</button>
+      </div>
+    </div>
+  </main>
+
+  <main class="conteudo">
+    <section class="pesquisa-acoes">
+      <h2>Pesquisar Ações Sociais</h2>
+      <div class="campo-pesquisa">
+        <input type="text" id="campo-busca" placeholder="Pesquise por título, descrição ou local..." />
+        <button onclick="pesquisar()">Pesquisar</button>
+      </div>
+    </section>
+
+    <section class="secao-gerenciar">
+      <h2 class="titulo-gerenciar">Gerenciamento de Materiais Recicláveis</h2>
+      <p class="texto-gerenciar">
+        Acesse o sistema para cadastrar materiais disponíveis, solicitar coletas e gerenciar o status dos seus materiais
+        recicláveis.
+      </p>
+      <a href="../Paginas/coop2.html"><button class="botao-gerenciar">Gerenciar Materiais</button></a>
+    </section>
+
+    <section class="lista-acoes">
+      <h2>Ações Sociais Disponíveis (<span id="contador-acoes">3</span>)</h2>
+
+      <div class="caixa-acao">
+        <h3>Coleta de Materiais Recicláveis - Bairro Centro</h3>
+        <p>Ação de coleta de materiais recicláveis em parceria com cooperativa local</p>
+        <div class="info-acao">
+          <span>Centro da cidade</span>
+          <span>15/06/2024</span>
+        </div>
+      </div>
+
+      <div class="caixa-acao">
+        <h3>Workshop de Sustentabilidade</h3>
+        <p>Palestra educativa sobre práticas sustentáveis para comunidade</p>
+        <div class="info-acao">
+          <span>Bairro Industrial</span>
+          <span>20/06/2024</span>
+        </div>
+      </div>
+
+      <div class="caixa-acao">
+        <h3>Campanha de Doação de Alimentos</h3>
+        <p>Arrecadação de alimentos para famílias em situação de vulnerabilidade</p>
+        <div class="info-acao">
+          <span>Zona Leste</span>
+          <span>25/06/2024</span>
+        </div>
+      </div>
+    </section>
+
+
+  </main>
+  <script src="../JavaScript/coop1.js"></script>
+</body>
+
+</html>

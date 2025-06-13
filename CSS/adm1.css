@@ -1,0 +1,178 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+body {
+  background-color: #f5f7fa;
+}
+
+.cabecalho-navegacao {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border);
+}
+
+.container-cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.informacoes-empresa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.titulo-empresa {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27c1e5;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 14px;
+}
+
+.botao-voltar {
+  margin-top: 20px;
+  background-color: #27c1e5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-bottom: 1rem;
+}
+
+.indicadores {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 20px;
+  margin: 20px;
+}
+
+.cartao-indicador {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  width: 200px;
+  text-align: center;
+}
+
+.nome-indicador {
+  font-size: 16px;
+  color: #333;
+}
+
+.valor-indicador {
+  font-size: 32px;
+  margin-top: 10px;
+  color: #27c1e5;
+  font-weight: bold;
+}
+
+.painel-acoes {
+  background-color: white;
+  border-radius: 10px;
+  padding: 30px;
+  margin: 20px;
+  text-align: center;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.painel-acoes h2 {
+  margin-bottom: 10px;
+  font-size: 22px;
+}
+
+.painel-acoes p {
+  font-size: 14px;
+  color: #555;
+}
+
+.botao-gerenciar {
+  margin-top: 20px;
+  background-color: #27c1e5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+}
+
+@media (max-width: 600px) {
+  .indicadores {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/* Responsividade para telas médias (tablets) e pequenas (celulares) */
+@media (max-width: 1024px) {
+  .conteudo-cabecalho {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    padding: 20px 0;
+    text-align: center;
+  }
+
+  .informacoes-empresa {
+    flex-direction: column;
+    gap: 4px;
+  }
+}
+
+@media (max-width: 768px) {
+  .painel-acoes {
+    padding: 20px;
+    margin: 10px;
+  }
+
+  .cartao-indicador {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .botao-voltar,
+  .botao-gerenciar {
+    width: 100%;
+    max-width: 300px;
+  }
+}
+
+@media (max-width: 480px) {
+  .titulo-empresa {
+    font-size: 18px;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+  }
+
+  .valor-indicador {
+    font-size: 24px;
+  }
+
+  .painel-acoes h2 {
+    font-size: 18px;
+  }
+
+  .painel-acoes p {
+    font-size: 13px;
+  }
+}

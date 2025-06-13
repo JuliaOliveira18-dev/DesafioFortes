@@ -1,0 +1,308 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: #f7f9fb;
+}
+
+header {
+  background: linear-gradient(to right, #c8e6c9);
+  padding: 1rem;
+  color: white;
+  text-align: left;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.5rem;
+}
+
+#titulo1 {
+  color: #2b813b;
+
+}
+
+header p {
+  margin: 0;
+  font-size: 0.9rem;
+}
+
+.botoes-topo {
+  display: flex;
+  justify-content: flex-end;
+  gap: 10px;
+  margin-top: -40px;
+  padding-right: 1rem;
+}
+
+.botao-topo {
+  margin-top: 20px;
+  background-color: #27c1e5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px;
+  cursor: pointer;
+  margin-top: 2rem;
+}
+
+.cabecalho-navegacao {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border);
+}
+
+.container-cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.informacoes-empresa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.titulo-empresa {
+  font-size: 20px;
+  font-weight: bold;
+  color: #27c1e5;
+  margin: 0;
+}
+
+.subtitulo {
+  font-size: 14px;
+}
+
+
+main {
+  padding: 1rem;
+}
+
+.caixas-info {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.caixa-info {
+  flex: 1;
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+  min-width: 150px;
+  text-align: center;
+}
+
+.caixa-info h3 {
+  margin: 0;
+  font-size: 0.9rem;
+  color: #777;
+}
+
+.caixa-info p {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin: 0.5rem 0;
+}
+
+.secao-coleta,
+.secao-materiais {
+  background-color: white;
+  border-radius: 10px;
+  padding: 1rem;
+  margin-bottom: 2rem;
+  box-shadow: 0 1px 5px rgba(0, 0, 0, 0.1);
+}
+
+.titulo-secao {
+  font-size: 1.2rem;
+  margin-bottom: 1rem;
+}
+
+.botao-azul {
+  background-color: #32b8f4;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.botao-cadastrar {
+  background-color: #32b8f4;
+  color: white;
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.item-material {
+  background-color: #f4f4f4;
+  padding: 1rem;
+  border-radius: 10px;
+  margin-bottom: 1rem;
+}
+
+.info-material strong {
+  display: block;
+  margin-top: 8px;
+}
+
+.area-botoes {
+  margin-top: 10px;
+  display: flex;
+  gap: 10px;
+}
+
+.botao-coletar {
+  background-color: #6cd776;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.botao-processar {
+  background-color: #f0c674;
+  border: none;
+  color: white;
+  padding: 8px 14px;
+  border-radius: 6px;
+  cursor: pointer;
+}
+
+.status-verde {
+  background-color: #d2f8da;
+  color: #2b813b;
+  padding: 4px 10px;
+  border-radius: 20px;
+  font-size: 0.8rem;
+  display: inline-block;
+  margin-top: 5px;
+}
+
+@media (max-width: 768px) {
+  .caixas-info {
+    flex-direction: column;
+  }
+
+  .botoes-topo {
+    justify-content: center;
+    margin-top: 10px;
+    flex-wrap: wrap;
+  }
+}
+
+/* Tablets e telas médias (até 1024px) */
+@media (max-width: 1024px) {
+  .conteudo-cabecalho {
+    flex-direction: column;
+    height: auto;
+    gap: 10px;
+    text-align: center;
+    padding: 20px 0;
+  }
+
+  .informacoes-empresa {
+    flex-direction: column;
+    gap: 6px;
+    align-items: center;
+  }
+
+  .botoes-topo {
+    justify-content: center;
+    padding-right: 0;
+  }
+
+  .botao-topo {
+    width: 100%;
+    max-width: 300px;
+  }
+
+  .caixa-info {
+    flex: 1 1 45%;
+  }
+}
+
+/* Celulares (até 768px) */
+@media (max-width: 768px) {
+  .caixas-info {
+    flex-direction: column;
+  }
+
+  .container-cabecalho {
+    padding: 0 10px;
+  }
+
+  .botao-topo,
+  .botao-cadastrar,
+  .botao-azul {
+    width: 100%;
+  }
+
+  .area-botoes {
+    flex-direction: column;
+  }
+
+  .info-material {
+    font-size: 0.95rem;
+  }
+
+  .titulo-secao {
+    font-size: 1rem;
+  }
+
+  .item-material {
+    padding: 0.8rem;
+  }
+}
+
+/* Celulares pequenos (até 480px) */
+@media (max-width: 480px) {
+  header h1 {
+    font-size: 1.2rem;
+  }
+
+  header p {
+    font-size: 0.8rem;
+  }
+
+  .titulo-empresa {
+    font-size: 18px;
+  }
+
+  .subtitulo {
+    font-size: 12px;
+  }
+
+  .caixa-info p {
+    font-size: 1.3rem;
+  }
+
+  .botao-topo,
+  .botao-cadastrar,
+  .botao-azul,
+  .botao-coletar,
+  .botao-processar {
+    font-size: 0.9rem;
+    padding: 10px;
+  }
+
+  .status-verde {
+    font-size: 0.75rem;
+  }
+}

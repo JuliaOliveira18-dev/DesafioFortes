@@ -1,0 +1,426 @@
+:root {
+  --background: #ffffff;
+  --foreground: #1e1e1e;
+
+  --primary: #10b981;
+  --primary-hover: #0f9a6a;
+  --primary-foreground: #ffffff;
+
+  --secondary: #dbeafe;
+  --secondary-foreground: #334155;
+
+  --accent: #3b82f6;
+  --accent-foreground: #ffffff;
+
+  --destructive: #ef4444;
+  --destructive-foreground: #ffffff;
+
+  --border: #e2e8f0;
+  --input-bg: #f9fafb;
+
+  --radius: 12px;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background-color: var(--background);
+  color: var(--foreground);
+}
+
+.container-degrade {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  box-sizing: border-box;
+}
+
+.conteudo-centralizado {
+  display: flex;
+  flex-wrap: wrap;
+  max-width: 1200px;
+  width: 100%;
+  gap: 40px;
+  align-items: stretch;
+  justify-content: center;
+}
+
+.bloco-apresentacao {
+  flex: 1 1 55%;
+  color: white;
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.titulo-sistema {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+.subtitulo {
+  font-size: 1.2rem;
+  margin-bottom: 20px;
+}
+
+.descricao {
+  font-size: 1rem;
+  line-height: 1.5;
+}
+
+
+#modal-login {
+  flex: 1 1 35%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background: white;
+  padding: 30px 40px;
+  border-radius: 16px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+  width: 100%;
+  max-width: 400px;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.modal-content h2 {
+  font-size: 1.5rem;
+  font-weight: bold;
+  margin-bottom: 10px;
+  color: #111827;
+}
+
+.modal-content p {
+  font-size: 0.95rem;
+  margin-bottom: 20px;
+  color: #4b5563;
+}
+
+.modal-content label {
+  display: block;
+  margin-top: 10px;
+  margin-bottom: 5px;
+  font-weight: 500;
+  color: #374151;
+}
+
+.modal-content input {
+  width: 100%;
+  padding: 10px 14px;
+  border: 1px solid #d1d5db;
+  border-radius: 8px;
+  font-size: 1rem;
+  margin-bottom: 10px;
+  box-sizing: border-box;
+}
+
+.modal-content button {
+  margin-top: 10px;
+  padding: 12px;
+  background-color: #10b981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1rem;
+  width: 100%;
+  transition: background 0.3s ease;
+}
+
+.modal-content button:hover {
+  background-color: #059669;
+}
+
+.fechar {
+  position: absolute;
+  top: 10px;
+  right: 16px;
+  font-size: 24px;
+  color: #9ca3af;
+  cursor: pointer;
+}
+
+.pagina-principal {
+  min-height: 100vh;
+  background-color: var(--background);
+}
+
+.cabecalho-navegacao {
+  background-color: white;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1);
+  border-bottom: 1px solid var(--border);
+}
+
+.container-cabecalho {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.conteudo-cabecalho {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 80px;
+}
+
+.informacoes-empresa {
+  display: flex;
+  align-items: center;
+  gap: 16px;
+}
+
+.titulo-empresa {
+  font-size: 20px;
+  font-weight: bold;
+  color: #111827;
+  margin: 0;
+}
+
+.subtitulo-sistema {
+  font-size: 14px;
+  color: #6b7280;
+  margin: 0;
+}
+
+.botao-acesso-sistema {
+  border: 2px solid var(--primary);
+  background: transparent;
+  color: var(--primary);
+  padding: 8px 16px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.botao-acesso-sistema:hover {
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+}
+
+.formulario-login {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
+
+.campo-email,
+.campo-senha {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+label {
+  font-weight: bold;
+  font-size: 14px;
+}
+
+input[type="email"],
+input[type="password"] {
+  padding: 8px 12px;
+  border: 1px solid var(--border);
+  border-radius: var(--radius);
+  background-color: var(--input-bg);
+  font-size: 14px;
+}
+
+input[type="email"]:focus,
+input[type="password"]:focus {
+  outline: none;
+  border-color: var(--primary);
+  box-shadow: 0 0 4px var(--primary);
+}
+
+.required-field {
+  background-color: #fef3c7;
+  border-color: #fbbf24;
+}
+
+.botao-entrar {
+  width: 100%;
+  background-color: var(--primary);
+  color: var(--primary-foreground);
+  border: none;
+  padding: 12px;
+  border-radius: var(--radius);
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  font-size: 16px;
+}
+
+.botao-entrar:hover {
+  background-color: var(--primary-hover);
+}
+
+.informacoes-teste {
+  font-size: 12px;
+  color: #6b7280;
+  margin-top: 10px;
+}
+
+.secao-apresentacao-principal {
+  padding: 80px 20px;
+  color: white;
+  background: linear-gradient(135deg, #10b981 0%, #3b82f6 100%);
+  text-align: center;
+  overflow: hidden;
+}
+
+.container-apresentacao {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.conteudo-apresentacao-centralizado {
+  margin-bottom: 64px;
+  animation: fadeIn 1s ease forwards;
+}
+
+.titulo-sistema-gestao {
+  font-size: 36px;
+  font-weight: bold;
+  margin: 0 0 16px 0;
+}
+
+.subtitulo-responsabilidade-social {
+  font-size: 20px;
+  margin: 0 0 24px 0;
+  font-weight: 500;
+}
+
+.descricao-plataforma {
+  font-size: 18px;
+  max-width: 700px;
+  margin: 0 auto;
+  opacity: 0.9;
+  line-height: 1.5;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+@media (max-width: 1024px) {
+  .conteudo-centralizado {
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+  }
+
+  .bloco-apresentacao,
+  #modal-login {
+    flex: 1 1 100%;
+    max-width: 100%;
+  }
+
+  .bloco-apresentacao {
+    text-align: center;
+  }
+
+  .conteudo-cabecalho {
+    flex-direction: column;
+    align-items: flex-start;
+    height: auto;
+    gap: 12px;
+    padding: 20px 0;
+  }
+}
+
+@media (max-width: 768px) {
+
+  .titulo-sistema,
+  .titulo-sistema-gestao {
+    font-size: 1.5rem;
+  }
+
+  .subtitulo,
+  .subtitulo-responsabilidade-social {
+    font-size: 1rem;
+  }
+
+  .descricao,
+  .descricao-plataforma {
+    font-size: 0.95rem;
+  }
+
+  .modal-content {
+    padding: 20px;
+    border-radius: 12px;
+  }
+
+  .conteudo-cabecalho {
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-degrade {
+    padding: 20px;
+  }
+
+  .modal-content {
+    max-width: 100%;
+  }
+
+  .conteudo-cabecalho {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding: 10px 0;
+  }
+
+  .botao-acesso-sistema {
+    width: 100%;
+  }
+
+  .informacoes-empresa {
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+  }
+
+  .titulo-empresa,
+  .subtitulo-sistema {
+    text-align: center;
+  }
+
+  .secao-apresentacao-principal {
+    padding: 40px 15px;
+  }
+
+  .titulo-sistema-gestao {
+    font-size: 28px;
+  }
+
+  .descricao-plataforma {
+    font-size: 16px;
+  }
+}

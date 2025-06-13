@@ -1,0 +1,105 @@
+.container-degrade {
+  background: linear-gradient(to right, #1abc9c, #3498db);
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.conteudo {
+  background-color: white;
+  padding: 2rem;
+  border-radius: 8px;
+  width: 100%;
+  max-width: 500px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+}
+
+.conteudo h2 {
+  margin-bottom: 1rem;
+  text-align: center;
+}
+
+.conteudo form {
+  display: flex;
+  flex-direction: column;
+}
+
+.conteudo label {
+  margin-top: 10px;
+  font-weight: bold;
+}
+
+.conteudo input {
+  padding: 0.5rem;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+input.obrigatorio {
+  background-color: #fff983 !important;
+}
+
+.conteudo button {
+  margin-top: 1.5rem;
+  padding: 0.7rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-weight: bold;
+}
+
+.conteudo button:hover {
+  background-color: #2980b9;
+}
+
+
+@media (max-width: 768px) {
+  .conteudo {
+    padding: 1.5rem;
+    max-width: 90%;
+  }
+
+  .conteudo h2 {
+    font-size: 1.4rem;
+  }
+
+  .conteudo input {
+    font-size: 1rem;
+  }
+
+  .conteudo button {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .container-degrade {
+    padding: 20px;
+  }
+
+  .conteudo {
+    padding: 1rem;
+    max-width: 100%;
+    border-radius: 6px;
+  }
+
+  .conteudo h2 {
+    font-size: 1.2rem;
+  }
+
+  .conteudo label {
+    font-size: 0.95rem;
+  }
+
+  .conteudo input {
+    font-size: 0.95rem;
+  }
+
+  .conteudo button {
+    font-size: 0.95rem;
+    padding: 0.6rem;
+  }
+}

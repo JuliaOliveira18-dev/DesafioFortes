@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fortes Engenharia</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+
+<body>
+    <main class="cabecalho-navegacao">
+        <div class="container-cabecalho">
+            <div class="conteudo-cabecalho">
+                <div class="informacoes-empresa">
+                    <h1 class="titulo-empresa">Fortes Engenharia</h1>
+                </div>
+                <button onclick="abrirLogin()" class="botao-acesso-sistema">
+                    Acessar Sistema
+                </button>
+            </div>
+        </div>
+    </main>
+
+    <div class="container-degrade">
+        <div class="conteudo-centralizado">
+
+            <div class="bloco-apresentacao">
+                <h1 class="titulo-sistema">Sistema de Gestão de Ações Sociais</h1>
+                <h2 class="subtitulo">Fortes Engenharia - Conectando Sustentabilidade e Responsabilidade Social</h2>
+                <p class="descricao">
+                    Nossa plataforma digital revoluciona a gestão de ações sociais e destinação de resíduos,
+                    conectando cooperativas de reciclagem e instituições sociais para criar um ecossistema sustentável e
+                    socialmente responsável.
+                </p>
+            </div>
+
+            <div id="modal-login" class="modal">
+                <div class="modal-content">
+                    <span class="fechar" onclick="fecharLogin()">&times;</span>
+                    <h2>Login - Sistema Fortes</h2>
+                    <p>Digite suas credenciais para acessar o sistema</p>
+                    <form onsubmit="fazerLogin(event)">
+                        <label for="email">Email:</label>
+                        <input type="email" id="email" required placeholder="seu.email@fortes.com.br">
+
+                        <label for="senha">Senha:</label>
+                        <input type="password" id="senha" required placeholder="Digite sua senha">
+
+                        <button type="submit">Entrar no Sistema</button>
+                    </form>
+                    <p class="cadastro-link">
+                        Não tem conta? <a href="./Paginas/cadastro.html">Cadastre-se</a>
+                    </p>
+                </div> 
+            </div>
+
+        </div>
+    </div>
+
+    <script src="./script.js"></script>
+</body>
+
+</html>

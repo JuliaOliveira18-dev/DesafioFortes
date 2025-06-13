@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Gerenciar Ações Sociais</title>
+  <link rel="stylesheet" href="../CSS/adm2.css" />
+</head>
+
+<body>
+  <main class="cabecalho-navegacao">
+    <div class="container-cabecalho">
+      <div class="conteudo-cabecalho">
+        <div class="informacoes-empresa">
+          <h1 class="titulo-empresa">Fortes Engenharia</h1>
+        </div>
+        <div class="botoes-topo">
+          <a href="../Paginas/adm1.html"><button>Voltar</button></a>
+          <button onclick="voltarParaIndex()">Sair</button>
+        </div>
+      </div>
+    </div>
+  </main>
+
+
+  <div class="conteudo">
+    <div class="faixa">
+      <h2>Nova Ação Social</h2>
+      <form id="form-acao">
+        <input type="hidden" id="acao-id" />
+        <input type="text" id="titulo" name="titulo" placeholder="Título" required />
+        <input type="text" id="descricao" name="descricao" placeholder="Descrição" required />
+        <input type="date" id="data" name="data" required />
+        <input type="text" id="local" name="local" placeholder="Local" required />
+        <input type="text" id="responsavel" name="responsavel" placeholder="Responsável" required />
+        <input type="text" id="beneficiarios" name="beneficiarios" placeholder="Beneficiários" required />
+        <input type="text" id="recursos" name="recursos" placeholder="Recursos" required />
+        <select id="status" name="status" required>
+          <option value="Planejada">Planejada</option>
+          <option value="Em Andamento">Em Andamento</option>
+          <option value="Concluída">Concluída</option>
+        </select>
+        <button type="submit" class="nova-acao">Salvar Ação</button>
+      </form>
+    </div>
+
+    <div id="lista-acoes"></div>
+  </div>
+
+  <script src="../JavaScript/adm2.js"></script>
+</body>
+
+</html>

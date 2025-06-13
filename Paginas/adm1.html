@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Dashboard Administrativo</title>
+  <link rel="stylesheet" href="../CSS/adm1.css">
+</head>
+
+<body>
+
+  <main class="cabecalho-navegacao">
+    <div class="container-cabecalho">
+      <div class="conteudo-cabecalho">
+        <div class="informacoes-empresa">
+          <h1 class="titulo-empresa">Dashboard Administrativo</h1>
+        </div>
+        <button onclick="voltarParaIndex()" class="botao-voltar">
+          Sair
+        </button>
+      </div>
+    </div>
+  </main>
+
+  <div class="indicadores">
+    <div class="cartao-indicador">
+      <div class="nome-indicador">Total de Ações</div>
+      <div class="valor-indicador">0</div>
+    </div>
+    <div class="cartao-indicador">
+      <div class="nome-indicador">Em Andamento</div>
+      <div class="valor-indicador" style="color: #007bff;">0</div>
+    </div>
+    <div class="cartao-indicador">
+      <div class="nome-indicador">Concluídas</div>
+      <div class="valor-indicador">0</div>
+    </div>
+    <div class="cartao-indicador">
+      <div class="nome-indicador">Planejadas</div>
+      <div class="valor-indicador" style="color: #f0ad4e;">0</div>
+    </div>
+  </div>
+
+  <div class="painel-acoes">
+    <h2>Gerenciamento de Ações Sociais</h2>
+    <p>Acesse o sistema completo para criar, editar e gerenciar todas as ações sociais da empresa.</p>
+    <a href="../Paginas/adm2.html"><button class="botao-gerenciar">Gerenciar Ações Sociais</button></a>
+  </div>
+  <script src="../JavaScript/adm1.js"></script>
+</body>
+
+</html>
